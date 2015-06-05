@@ -1,0 +1,428 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: arial, sans-serif;
+	color: #545454;
+}
+
+#top_nav a, #footer a {
+	text-decoration: none;
+	color: #777;
+	font-size: small;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	min-height:100%;
+	position:relative;
+}
+
+#topbar {
+	width: 100%;
+	height:  60px;
+	background: #F1F1F1;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.logo {
+	width: 95px;
+	height: 37px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 13px;
+}
+
+.logo img { 
+	position: absolute;
+	top: -41px;
+}
+
+.search {
+	position: relative;
+	top: 25%;
+}
+
+.search_field {
+    float: left;
+    height: 25px;
+    width: 589px;
+    margin-left: 5px;
+    border: 1px solid;
+    border-color: #C0C0C0 #D9D9D9 #D9D9D9; 
+    font-size: 16px;
+}
+
+.search_btn {
+    float: left;
+    width: 50px;
+    height: 27px;
+    border: 1px solid #3079ED;
+    background-color: #4387FD;
+    background: transparent -webkit-linear-gradient(#4C8FFD, #4787ED) repeat scroll 0 0;
+    background: transparent -o-linear-gradient(#4C8FFD, #4787ED) repeat scroll 0 0;
+    background: transparent linear-gradient(#4C8FFD, #4787ED) repeat scroll 0 0;
+    display: inline-flex;
+}
+
+.search_btn_img {
+	width: 18px;
+	height: 18px;
+	background: transparent url("https://www.google.co.uk/images/nav_logo195.png") repeat scroll -113px -60px;
+	margin: 4px auto;
+}
+
+.apps {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin: 2px -9px;
+	background: #F1F1F1 url("https://ssl.gstatic.com/gb/images/i1_71651352.png") -332px -58px no-repeat;
+	cursor: default;
+	opacity: 0.7;
+}
+
+.apps:hover {
+	opacity: 1;
+}
+
+.topbar_btn_container {
+	float: right;
+	position: relative;
+	margin: 19px 30px;
+}
+
+.sign_in_btn  {
+	font-weight: bold;
+	font-size: 13px;
+    outline: medium none;
+	text-decoration: none;
+    border: 1px solid #4285F4;
+    background-color: #4387FD;
+    background: transparent -webkit-linear-gradient(#4387FD, #4683EA) repeat scroll 0 0;
+    background: transparent -o-linear-gradient(#4387FD, #4683EA) repeat scroll 0 0;
+    background: transparent linear-gradient(#4387FD, #4683EA) repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    padding: 6px 12px 6px 12px;
+    margin-left: 30px;
+    border-radius: 2px;
+}
+
+.sign_in_btn:hover {
+	cursor: default;
+}
+
+#top_nav {
+	color: #777;
+	font-size: small;
+	line-height: 52px;
+	border-bottom: 1px solid #E5E5E5;
+	height: 59px;
+}
+
+.options_btn {
+	float: right;
+	position: relative;
+	top: 15px;
+	right: 28px;
+	background-color: #F5F5F5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#F1F1F1)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #F5F5F5, #F1F1F1); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #F5F5F5, #F1F1F1); /* IE10 */
+	background-image:      -o-linear-gradient(top, #F5F5F5, #F1F1F1); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #F5F5F5, #F1F1F1);
+	filter: "progid:DXImageTransform.Microsoft.Gradient(startColorstr=#F5F5F5, endColorstr=#F1F1F1)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorstr=#F5F5F5, endColorstr=#F1F1F1)";
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	padding: 14px 35px;
+}
+
+.options_btn_img {
+	background: transparent url("https://www.google.co.uk/images/nav_logo195.png") -42px -259px no-repeat;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 20%;
+	right: 35%;
+	opacity: 0.6;
+	border-style: none;
+}
+
+.options_btn:hover {
+ 	background-color: #F8F8F8;
+ 	background-image: -webkit-linear-gradient(#F8F8F8, #F1F1F1);
+ 	background-image: -o-linear-gradient(#F8F8F8, #F1F1F1);
+ 	background-image: linear-gradient(#F8F8F8, #F1F1F1);
+ 	border: 1px solid #C6C6C6;
+ 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+ 	transition: all 0s ease 0s;
+ } 
+
+.result_stats {
+	color: #808080;
+	font-size: small;
+	line-height: 42px;
+	margin-left: 135px;
+	margin-bottom: 8px;
+}
+
+#top_nav_links, #footer_links {
+	margin-left: 128px;
+	display: inline-block;
+}
+
+.top_nav_link {
+	display: inline-block;
+	padding: 0 10px;
+	margin: 4px;
+}
+
+#footer_links a, .result_stats a {
+	padding: 19px 10px;
+	margin: 4px;
+}
+
+.selected {
+	font-weight: bold;
+	color: #DD4B39;
+	border-bottom: 3px solid #DD4B39;
+	display: inline-block;
+	padding: 0 8px;
+}
+
+.top_nav_link:hover, #footer_links a:hover {
+	color: #222;
+}
+
+.more_link:hover +.arrow_more {
+	border-top: 4px solid #222;
+}
+
+.more_link {
+	margin-left: 16px;
+}
+
+.arrow_more:hover {
+	border-top: 4px solid #222;
+}
+
+.arrow_more {
+	width: 0;
+	height: 0;
+	border-top: 4px solid #909090;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: transparent;
+	position: relative;
+	top: 10px;
+	left: 6px;
+	margin-right: 16px;
+}
+
+.search_tools {
+	border: 1px solid transparent;
+	border-radius: 2px;
+	padding: 4px 8px;
+}
+
+.search_tools:hover {
+	background-color: #F8F8F8;
+	background-image: -moz-linear-gradient(center top , #F8F8F8, #F1F1F1);
+	border: 1px solid #C6C6C6;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	transition: all 0s ease 0s;
+}
+
+#main {
+	float: left;
+	margin-left: 135px;
+	width: 518px;
+}
+
+.results {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.result {
+	margin-bottom: 23px;
+}
+
+.result_url {
+	color: #006621;
+	font-size: 14px;
+}
+
+.arrow_down {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 5px solid #008000;
+	position: absolute;
+	margin: 5px 7px;
+}
+
+.description {
+	font-size: 13px;
+}
+
+.result a, .ads a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #1A0DAB;
+}
+
+.related_searches {
+	width: 525px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	height: 135px;
+}
+
+.related_searches_col_left, .related_searches_col_right {
+	float: left;
+	padding-right: 16px;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+
+.related_searches h4 {
+	color: #808080;
+	font:   normal 18px/18px arial;
+	margin: 10px 0;
+}
+
+.related_searches a {
+	font-size: 13px;
+	line-height: 20px;
+	color: #1A0DAB;
+	text-decoration: none;
+}
+
+.related_searches a:hover {
+	text-decoration: underline;
+}
+
+#nav_count {
+	clear: both;
+}
+
+#bottom_nav td {
+    padding: 0;
+    text-align: center;
+}
+
+#bottom_nav a:link {
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#bottom_nav a:visited {
+	color: #1A0DAB;
+}
+
+#bottom_nav a:hover {
+	text-decoration: underline;
+}
+
+.nav_end_G {
+	display: block;
+	width: 28px;
+	height: 40px;
+}
+
+.csb {
+	height: 40px;
+	display: block;
+}
+
+.cur {
+	font-weight: bold; 
+	font-size: 13px;
+	color: #222;
+}
+
+.fl {
+	line-height: 13px;
+}
+
+.nav_end {
+	font-weight: bold;
+	line-height: 14px;
+}
+
+.ad_header {
+	background-color: #EFC439;
+	font-size: 12px;
+	color: #fff;	
+	border-radius: 2px;
+	padding: 0 2px;
+	line-height: 14px;
+}
+
+.ads {
+	float: left;
+	width: 298px;
+	padding: 0px;
+	margin-left: 67px;
+}
+
+.ad {
+	padding: 11px 0;
+}
+
+.ad_rating {
+	color: #808080;
+	font-size: 13px;
+}
+
+.rating_stars {
+	color: #E7711B;
+	font-size: 14px;
+	float: left;
+}
+
+.orange_stars {
+	background: transparent url("https://www.google.co.uk/images/nav_logo195.png") -100px -275px no-repeat;
+	width: 53px;
+	height: 13px;
+	float: left;
+	position: relative;
+	top: 1px;
+	left: 2px;
+}
+
+.grey_stars {
+	background: transparent url("https://www.google.co.uk/images/nav_logo195.png") -100px -260px no-repeat;
+	width: 15px;
+	height: 15px;
+	float: left;
+	position: relative;
+	top: 1px;
+	left: 2px;
+}
+
+.ad_link {
+	font-size: 12px;
+	color: blue;
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	height:  60px;
+	background: #F1F1F1;
+	border-top: 1px solid #E5E5E5;
+	line-height: 60px;
+}
